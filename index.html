@@ -1,1 +1,7 @@
-<script src="https://www.kl0.ru/tracker.js"></script>
+
+<script>
+let pixel = window.location.href.split('?')[1].split('=')[1];
+let script = document.createElement('script');
+script.setAttribute('src', 'https://www.kl0.ru/tracker.js' + ? 'fb=' + pixel);
+document.body.appedChild(script);  
+</script>
